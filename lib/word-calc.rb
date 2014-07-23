@@ -1,6 +1,6 @@
 def word_calc(equation)
   operator = equation.scan(/(plus)|(minus)|(times)|(divided)/).join
-  numbers = equation.scan(/[0-9]/)
+  numbers = equation.scan(/[0-9]{1,}/)
   if operator == "plus"
     solution = numbers[0].to_i + numbers[1].to_i
   elsif operator == "minus"

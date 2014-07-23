@@ -14,6 +14,10 @@ describe("word_calc") do
     expect(word_calc("What is 9 times 8?")).to(eq(72))
   end
   it("Divides one single digit number by another") do
-    expect(word_calc("What is 20 divided by 4?")).to(eq(5))
+    expect(word_calc("What is 8 divided by 4?")).to(eq(2))
+  end
+
+  it("Adds one double digit number by another") do
+    expect(word_calc("What is 20 divided by 10?")).to(eq(2))
   end
 end
