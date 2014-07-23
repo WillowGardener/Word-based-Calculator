@@ -13,4 +13,7 @@ describe("word_calc") do
   it("Multiplies one single digit number to another") do
     expect(word_calc("What is 9 times 8?")).to(eq(72))
   end
+  it("Divides one single digit number by another") do
+    expect(word_calc("What is 20 divided by 4?")).to(eq(5))
+  end
 end
