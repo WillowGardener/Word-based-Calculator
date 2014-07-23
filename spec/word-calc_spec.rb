@@ -20,4 +20,7 @@ describe("word_calc") do
   it("Adds one double digit number by another") do
     expect(word_calc("What is 20 divided by 10?")).to(eq(2))
   end
+  it("takes one number to the power of another") do
+    expect(word_calc("What is 20 to the 3rd power?")).to(eq(8000))
+  end
 end
